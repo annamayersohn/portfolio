@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/html5reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="shortcut icon" type="image/jpeg" href="images/swordinstone.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;700&family=Zen+Kaku+Gothic+Antique:wght@400;700&display=swap" rel="stylesheet">    
+    <script src="https://kit.fontawesome.com/dcf831bb99.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script type="text/javascript" src="function.js"></script>
+    <title>Contact | In Arthur’s Footsteps</title>
+  </head>
+  <body>
+    <div class="skip">
+      <a href="#main">Skip to Main Content</a>
+    </div>
+    <header>
+      <h1><a href="index.html">In Arthur’s Footsteps</a><img src="images/swordinstone.png" href="icon" alt="sword in the stone icon"></h1>
+      <nav class="nav" id="nav">
+        <ul>
+          <li>
+            <a aria-label="Menu" href="javascript:void(0);" class="icon" onclick="menu()">
+              Navigation
+              <i class="fas fa-bars"></i>
+            </a>
+          </li>
+          <li><a href="index.html">Introduction</a></li>
+          <li><a href="ascentandlife.html">Ascent and Life</a></li>
+          <li><a href="downfallanddeath.html">Downfall and Death</a></li>
+          <li><a href="secondarycharacters.html">Secondary Characters</a></li>
+          <li><a href="earlysources.html">Early Sources</a></li>
+          <li><a href="contact.html" id="current">Contact</a></li>
+        </ul>
+	  	</nav>
+    </header>
+    <main id="main">
+      <h2>Contact Me!</h2>
+      <p>Questions? Comments? Send them to me using the following form.</p>
+      <form action="https://formspree.io/f/mdoyqwld" method="POST">
+        <fieldset>
+          <legend>Contact Form</legend>
+          <label for="name">Name:</label><br>
+          <input type="text" id="name" name="name" placeholder="Geoffrey of Monmouth"><br>
+          <label for="email">Email:</label><br>
+          <input type="email" id="email" name="email address" placeholder="geoffrey@monmouth.com"><br>
+          <label for="message">Message:</label><br>
+          <textarea id="message" name="message"></textarea><br>
+          <input type="submit" id="submit" value="Send message">
+        </fieldset>
+      </form>
+      <p>Thanks for visiting my website! How about a joke? Tap/hover to see the punchline!</p>
+      <div class="flip-container" tabindex=0>
+        <div class="flip">
+          <div class="front">
+            <p>What made Camelot such a popular tourist destination?</p>
+          </div>
+          <div class="back">
+            <p>The knightlife!</p>
+            <img id="knight" src="images/knight.png" alt="cute knight"/>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <p>&copy; Anna Mayersohn, 2021<br>All photographs on this website are my own unless otherwise specified.</p>
+    </footer>
+  </body>
+</html>
