@@ -162,7 +162,6 @@ h2 {
     text-align: center;
     line-height: 1.3;
     margin-bottom: 20px;
-
 }
 
 .contents {
@@ -248,8 +247,6 @@ figure {
 
 .modal-box {
     position: relative;
-    /* left: 10vw;
-    top: 20vh; */
     padding: 10px 10px 40px 10px;
     background-color: khaki;
     width: 80%;
@@ -274,7 +271,6 @@ figure {
 }
 
 .place .horizontal img, .place .vertical img {
-    /* margin-bottom: 10px; */
     padding: 0 10px;
 }
 
@@ -287,8 +283,6 @@ button {
     font-family: inherit;
     font-size: 12pt;
     font-weight: bold;
-    /* background-color: rgb(102, 5, 5);
-    color: white; */
     border-width: 2px;
     width: 65px;
 }
@@ -390,7 +384,6 @@ footer {
 
 form {
     text-align: center;
-    /* min-height: 60vh; */
 }
 
 legend, label {
@@ -557,13 +550,7 @@ img#knight {
         grid-column: 3 / span 1;
     }
 
-    /* .unit img, .unit figure {
-        grid-column: span 2;
-        margin: 0 auto 10px auto;
-    } */
-
     .unit a, .unit figure {
-        /* grid-column: span 1; */
         margin: 0 auto 10px auto;
         grid-column: span 2;
         height: fit-content;
@@ -638,14 +625,6 @@ img#knight {
         grid-template-columns: 1fr 1fr 100px;
     }
 
-    /* .unit.two-vertical:nth-of-type(odd) {
-        grid-template-columns: 100px 2fr 3fr;
-    }
-
-    .unit.two-vertical:nth-of-type(even) {
-        grid-template-columns: 3fr 2fr 100px;
-    } */
-
     .unit a, .unit figure {
         grid-column: 2 / span 1;
     }
@@ -690,47 +669,21 @@ img#knight {
         padding-right: 30px;
     }
 
-    /* .two-vertical.unit {
-        grid-template-columns: auto 40% auto;
-    }  */
-
     .sources {
         justify-content: space-around;
     }
 }
 
-/* @media screen and (min-width: 1250px) {
-    .two-vertical:nth-of-type(odd) {
-        grid-template-columns: 100px 1fr 1fr 1fr;
-    }
-
-    .two-vertical:nth-of-type(even) {
-        grid-template-columns: 1fr 1fr 1fr 100px;
-    }
-
-    .unit.two-vertical a {
-        grid-column: span 1;
-    }
-
-    .unit.two-vertical p {
-        grid-row: 1 / span 1;
-    }
-
-    .two-vertical:nth-of-type(odd) p {
-        grid-column: 4 / span 1;
-    }
-    .two-vertical:nth-of-type(even) p {
-        grid-column: 1 / span 1;
-    }
-
-
-} */
 
 @media screen and (prefers-reduced-motion: reduce) {
     .parallax {
         background-image: url("../images/parallax.jpg");
         background-size: cover;
         background-attachment: scroll;
+    }
+
+    .sources .source:hover .source-text, .sources .source:focus .source-text {
+        transition-duration: 0ms;
     }
 
     .flip {

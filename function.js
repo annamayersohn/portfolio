@@ -27,8 +27,6 @@ $(document).ready(function(){
 
 
 var mw = document.querySelector(".modal-word");
-// var mc = document.querySelector(".modal-container")
-// Double condition: if (con1 && con2)
 
 if (mw) {
     mw.addEventListener("click", function() {
